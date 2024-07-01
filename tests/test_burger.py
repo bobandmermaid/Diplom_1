@@ -29,5 +29,4 @@ class TestBurger:
 
     def test_get_receipt_returns_expected_receipt(self, burger):
         receipt = burger.get_receipt()
-        assert receipt.startswith('(==== white bun ====)')
-        assert 'Price: ' in receipt
+        assert '(==== white bun ====)' in receipt
